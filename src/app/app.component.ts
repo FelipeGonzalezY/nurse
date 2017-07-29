@@ -4,6 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { LoginPage } from '../pages/login/login';
 import { MiCuentaPage } from '../pages/mi-cuenta/mi-cuenta';
 import { HistorialPage } from '../pages/historial/historial';
 import { AyudaPage } from '../pages/ayuda/ayuda';
@@ -14,7 +15,7 @@ import { AyudaPage } from '../pages/ayuda/ayuda';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = LoginPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -35,8 +36,11 @@ export class MyApp {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
+      console.log(this.platform.platforms());
+      if(!this.platform.is('core')){
+        this.statusBar.styleDefault();
+        this.splashScreen.hide();
+      }
     });
   }
 

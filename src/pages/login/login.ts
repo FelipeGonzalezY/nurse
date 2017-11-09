@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { RegistroPage } from '../registro/registro';
 
 /**
  * Generated class for the LoginPage page.
@@ -22,11 +23,15 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
 
-  login(){
+  ingreso(){
     this.navCtrl.setRoot(HomePage)
       .then(
         success => console.log(success),
         error => console.log(error));
+  }
+  
+  registro(){
+    this.navCtrl.push(RegistroPage);
   }
 
 }

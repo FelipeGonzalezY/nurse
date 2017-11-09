@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
+import { RegistroPage } from '../pages/registro/registro';
 import { HomePage } from '../pages/home/home';
 import { MiCuentaPage } from '../pages/mi-cuenta/mi-cuenta';
 import { HistorialPage } from '../pages/historial/historial';
@@ -16,6 +17,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     LoginPage,
+    RegistroPage,
     HomePage,
     MiCuentaPage,
     HistorialPage,
@@ -29,6 +31,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     LoginPage,
+    RegistroPage,
     HomePage,
     MiCuentaPage,
     HistorialPage,

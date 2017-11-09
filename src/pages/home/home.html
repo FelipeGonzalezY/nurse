@@ -1,19 +1,67 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="azul-base">
+
+<div class="logo-nurse" float-left>
+     <img alt="logo" height="28" src="/assets/images/logo-nurse-n.svg" >
+</div>
+
+    <ion-buttons end>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    </ion-buttons>
+    <!--ion-title>Home</ion-title-->
   </ion-navbar>
 </ion-header>
 
+
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+  <h3 class="titulo-standard">¿Hola, qué necesitas?</h3>
+  <p class="texto-home">
+    Puedes elegir una categoría para comenzar:
   </p>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4 class="bloque-servicio-left-top">
+        Medicamentos inyectables
+      </ion-col>
+      <ion-col col-4 class="bloque-servicio-center-top">
+        Curación Simple
+      </ion-col>
+      <ion-col col-4 class="bloque-servicio-right-top">
+        Sondas
+      </ion-col>
+      <ion-col col-4 class="bloque-servicio-left-bottom">
+        Drenaje
+      </ion-col>
+      <ion-col col-4 class="bloque-servicio-center-bottom">
+        Control glicemia
+      </ion-col>
+      <ion-col col-4 class="bloque-servicio-right-bottom">
+        Signos vitales
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <button ion-button secondary menuToggle>Toggle Menu Basic</button>
-  <button ion-button>Prueba</button>
+  <br><br>
+  <ion-list class="lista-drop">
+    <ion-item>
+      <ion-label class="lista-drop-label">¿De qué tipo?</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="nes">Cidotén</ion-option>
+        <ion-option value="n64">Aspirina</ion-option>
+        <ion-option value="ps">Cannabis</ion-option>
+        <ion-option value="genesis">Loratadina</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <button class="button-next" ion-button color="ok" block full round icon-right>
+    Siguiente
+  </button>
+
+  <div class="footer-class">
+        <p>Posterior al agendamiento podría haber una cancelación del servicio, donde NURSE cubrirá la atención con una nueva enfermera  <a href="#">ver más</a></p>
+  </div>
+
 </ion-content>

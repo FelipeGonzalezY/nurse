@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { MiCuentaPage } from '../pages/mi-cuenta/mi-cuenta';
 import { HistorialPage } from '../pages/historial/historial';
 import { AyudaPage } from '../pages/ayuda/ayuda';
+import { MensajesPage } from '../pages/mensajes/mensajes';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     MiCuentaPage,
     HistorialPage,
-    AyudaPage
+    AyudaPage,
+    MensajesPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     MiCuentaPage,
     HistorialPage,
-    AyudaPage
+    AyudaPage,
+    MensajesPage
   ],
   providers: [
     StatusBar,

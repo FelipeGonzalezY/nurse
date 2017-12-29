@@ -5,14 +5,53 @@
   Ionic pages and navigation.
 -->
 <ion-header>
+  <ion-navbar color="azul-base">
 
-  <ion-navbar>
-    <ion-title>observaciones</ion-title>
+<div class="logo-nurse" float-left>
+     <ion-title>Home</ion-title>
+</div>
+
+    <ion-buttons end>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    </ion-buttons>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
+
+
+  <br><br>
+  <ion-list class="lista-drop">
+    <ion-item>
+      <ion-label class="lista-drop-label">Elige al paciente</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="nes">Paciente 1</ion-option>
+        <ion-option value="n64">Paciente 2</ion-option>
+        <ion-option value="ps">Paciente 3</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <br><br>
+  <ion-list class="lista-drop">
+    <ion-item>
+      <ion-label class="lista-drop-label">Elige la dirección de atención</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="nes">Cidotén</ion-option>
+        <ion-option value="n64">Aspirina</ion-option>
+        <ion-option value="ps">Cannabis</ion-option>
+        <ion-option value="genesis">Loratadina</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+
+  <button class="button-next" ion-button color="ok" block full round icon-right>
+    Siguiente
+  </button>
+
 
 </ion-content>

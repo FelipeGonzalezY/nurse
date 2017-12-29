@@ -1,3 +1,131 @@
 page-observaciones {
+  // Estílos de títulos y textos global
+  .titulo-standard {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #16668B;
+    text-align: center;
+  }
+  .texto-home {
+    color:#828282;
+    text-align: center;
+  }
 
+  //Botones
+
+  .button-next {
+  box-shadow: none !important;
+  height:50px;
+  }
+  // Header app
+  .logo-nurse {
+    margin:0 0 0 15px;
+  }
+
+  //Bloques servicio (centro)
+  .bloque-servicio-left-top {
+    padding:0 6px 12px 6px;
+    border-bottom:1px dotted #D5D5D5;
+    color:white;
+    text-align: center;
+  }
+  .bloque-servicio-center-top {
+    padding:0 6px 12px 6px;
+    color:white;
+    border-left:1px dotted #D5D5D5;
+    border-bottom:1px dotted #D5D5D5;
+    border-right:1px dotted #D5D5D5;
+    text-align: center;
+  }
+  .bloque-servicio-right-top {
+    padding:0 6px 12px 6px;
+    color:white;
+    border-bottom:1px dotted #D5D5D5;
+    text-align: center;
+  }
+  .bloque-servicio-left-bottom {
+    padding:12px 6px 0 6px;
+    color:white;
+    text-align: center;
+  }
+  .bloque-servicio-center-bottom {
+    padding:12px 6px 0 6px;
+    color:white;
+    border-left:1px dotted #D5D5D5;
+    border-right:1px dotted #D5D5D5;
+    text-align: center;
+  }
+  .bloque-servicio-right-bottom {
+    padding:12px 6px 0 6px;
+    color:white;
+    text-align: center;
+  }
+  a.nurseapp_homebutton {
+    display: block;
+    font-family: roboto;
+    font-weight: bold;
+    font-size:1em;
+    color:#9B9B9B;
+    text-decoration: none;
+    text-align: center;
+  }
+  .nurseapp_homeico {
+    margin:0 0 10px 0;
+  }
+
+  //Listados
+  .lista-drop {
+    border: 2px solid #B7B7B7;
+    border-radius: 5px;
+    padding:0 10px;
+    height:45px;
+    box-sizing: content-box !important;
+    overflow: hidden;
+    font-family: "roboto";
+  }
+  .lista-drop .lista-drop-label {
+    font-weight: bold;
+    color:#155B80;
+    font-size:0.9em;
+  }
+  .select-wp {
+    border:0;
+    margin: 0 !important;
+    padding:0 8px !important;
+  }
+  .list-drop-table {
+    padding-top:0 !important;
+    margin-top: 0 !important;
+  }
+  .lista-drop .lista-drop-label {
+  margin:0;
+  }
+  .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+      border-bottom: none;
+  }
+  .list-ios > .item-block:first-child {
+      border-top: none;
+  }
+  .list-wp > .item-block:last-child, .list-wp > .item-wrapper:last-child .item-block {
+     border-bottom:!important
+  }
+
+  .list-wp > .item-block:first-child, .list-wp > .item-wrapper:first-child .item-block {
+      border-top:none !important
+  }
+
+
+  //Footer
+  .footer-class {
+    background: #F4F4F4;
+    color:#7B7B7B;
+    padding:4px 15px !important;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 10;
+    display: block;
+    width: 100%;
+    font-family: "roboto";
+  }
 }

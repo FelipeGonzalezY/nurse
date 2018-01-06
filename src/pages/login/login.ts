@@ -27,7 +27,8 @@ export class LoginPage {
     this.navCtrl.setRoot(HomePage)
       .then(
         success => console.log(success),
-        error => console.log(error));
+        error => console.log(error)
+      );
   }
   
   registro(){

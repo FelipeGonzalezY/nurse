@@ -8,7 +8,7 @@
   <ion-navbar color="azul-base">
 
 <div class="logo-nurse" float-left>
-     <ion-title>Home</ion-title>
+     <ion-title>Datos de atención</ion-title>
 </div>
 
     <ion-buttons end>
@@ -23,7 +23,13 @@
 <ion-content padding>
 
 
-  <br><br>
+  <br>
+
+  <button class="button-add" ion-button icon-left small round>
+  <ion-icon name="add"></ion-icon>
+  Agregar Paciente
+  </button>
+
   <ion-list class="lista-drop">
     <ion-item>
       <ion-label class="lista-drop-label">Elige al paciente</ion-label>
@@ -35,7 +41,12 @@
     </ion-item>
   </ion-list>
 
-  <br><br>
+
+  <button class="button-add" ion-button icon-left small round>
+  <ion-icon name="add"></ion-icon>
+  Agregar Dirección
+  </button>
+
   <ion-list class="lista-drop">
     <ion-item>
       <ion-label class="lista-drop-label">Elige la dirección de atención</ion-label>
@@ -47,6 +58,22 @@
       </ion-select>
     </ion-item>
   </ion-list>
+
+
+  <ion-list>
+    <ion-item>
+      <ion-label stacked class="title-inp">Consideraciones o enfermedades</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked class="title-inp">Observaciones generales</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+
+
+
 
 
   <button class="button-next" ion-button color="ok" block full round icon-right>

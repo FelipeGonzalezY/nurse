@@ -22,6 +22,21 @@ page-observaciones {
     margin:0 0 0 15px;
   }
 
+  .button-add {
+    background: color($colors, anaranjado-base, base);
+    margin: 0 0 15px 0;
+    border-shadow:none;
+    text-transform: none;
+    font-weight: bold;
+  }
+
+  .title-inp {
+    //background: color($colors, anaranjado-base, base);
+    font-weight: bold;
+    color:#155B80;
+    font-size:0.9em;
+  }
+
   //Bloques servicio (centro)
   .bloque-servicio-left-top {
     padding:0 6px 12px 6px;

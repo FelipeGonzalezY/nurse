@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NuevoPacientePage } from '../nuevo-paciente/nuevo-paciente';
+import { NuevaDireccionPage } from '../nueva-direccion/nueva-direccion';
 
 /**
  * Generated class for the ObservacionesPage page.
@@ -19,6 +21,14 @@ export class ObservacionesPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ObservacionesPage');
+  }
+
+  addPaciente(){
+    this.navCtrl.push(NuevoPacientePage);
+  }
+
+  addDireccion(){
+    this.navCtrl.push(NuevaDireccionPage);
   }
 
 }

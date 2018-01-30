@@ -11,9 +11,11 @@ import { MiCuentaPage } from '../pages/mi-cuenta/mi-cuenta';
 import { HistorialPage } from '../pages/historial/historial';
 import { AyudaPage } from '../pages/ayuda/ayuda';
 import { MensajesPage } from '../pages/mensajes/mensajes';
+import { NuevoPacientePage } from '../pages/nuevo-paciente/nuevo-paciente';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { NuevaDireccionPage } from '../pages/nueva-direccion/nueva-direccion';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HistorialPage,
     AyudaPage,
     MensajesPage,
-    ObservacionesPage
+    ObservacionesPage,
+    NuevoPacientePage,
+    NuevaDireccionPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HistorialPage,
     AyudaPage,
     MensajesPage,
-    ObservacionesPage
+    ObservacionesPage,
+    NuevoPacientePage,
+    NuevaDireccionPage
   ],
   providers: [
     StatusBar,

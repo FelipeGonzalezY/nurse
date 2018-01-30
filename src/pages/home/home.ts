@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ObservacionesPage } from '../observaciones/observaciones';
+import { MensajesPage } from '../mensajes/mensajes';
 
 @Component({
   selector: 'page-home',
@@ -14,6 +15,10 @@ export class HomePage {
 
   goObservaciones(){
     this.navCtrl.push(ObservacionesPage);
+  }
+
+  goMensajes(){
+    this.navCtrl.push(MensajesPage);
   }
 
 }
